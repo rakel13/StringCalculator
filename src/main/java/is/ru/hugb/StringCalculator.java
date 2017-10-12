@@ -7,7 +7,11 @@ public class StringCalculator {
 		else{
 			if(text.contains(",")){
 				String numbers[] = text.split(",");
-				return toInt(numbers[0]) + toInt(numbers[1]);
+				int sum = 0;
+				for(String n : numbers){
+					sum += toInt(n);
+				}
+				return sum;
 			}
 			return 1;
 		}

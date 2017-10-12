@@ -5,8 +5,8 @@ public class StringCalculator {
 		if(text.equals(""))
 			return 0;
 		else{
-			if(text.contains(",")){
-				String numbers[] = text.split(",");
+			if(text.contains(",") || text.contains("\\n")){
+				String numbers[] = text.replace("\n", ",").split(",");
 				return sum(numbers);
 			}
 			return 1;

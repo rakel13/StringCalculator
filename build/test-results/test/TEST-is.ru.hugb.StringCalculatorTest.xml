@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="is.ru.hugb.StringCalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-12T21:25:33" hostname="DESKTOP-HR4CJFR" time="0.001">
+  <properties/>
+  <testcase name="testEmptyString" classname="is.ru.hugb.StringCalculatorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

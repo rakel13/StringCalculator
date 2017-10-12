@@ -25,4 +25,12 @@ public class StringCalculatorTest {
 		assertEquals(6, StringCalculator.add("1,2,3"));
 		assertEquals(6, StringCalculator.add("1\n2,3"));
 	}
+
+	@Test
+	public void testIfNegative() {
+		("Negatives not allowed: -1").equals(StringCalculator.add("-1,2"));
+		("Negatives not allowed: -4,-5").equals(StringCalculator.add("2,-4,3,-5"));
+
+		//assertEguals("Negatives not allowed: -1", StringCalculator.add("-1,2"));
+	}
 }

@@ -1,5 +1,8 @@
 package is.ru.hugb;
 
+/* The StringCalculator accepts a string, splits the string into numbers by delimeters
+*  and adds the numbers together and returns the sum. If numbers are negative the StringCalculator
+*  will throw an exception. Delimeters can also be changed */
 public class StringCalculator {
 	public static int add(String text){
 		if(text.equals(""))
@@ -9,8 +12,7 @@ public class StringCalculator {
 				String [] numbers = stringSplitter(text);
 				
 				if(isNeg(numbers)){
-					getNeg(numbers);
-					
+					getNeg(numbers);	
 				}
 				else{
 					return sum(numbers);
@@ -19,11 +21,12 @@ public class StringCalculator {
 			return 1;
 		}
 	}
-
+	/* converts string into an integer */
 	private static int toInt(String number){
 		return Integer.parseInt(number);
 	}
 
+	/* sum up each number in the String array if the numbers are less than or equal to 1000 */
 	private static int sum(String [] numbers){
 		int sum = 0;
 		for(String n : numbers){
@@ -33,6 +36,7 @@ public class StringCalculator {
 		return sum;
 	}
 
+	/* If one of the numbers in the String array is negative isNeg will return true */
 	private static boolean isNeg(String [] numbers){
 		for(String n : numbers){
 			if(toInt(n) < 0){
@@ -42,6 +46,8 @@ public class StringCalculator {
 		return false;
 	}
 
+	/* getNeg creates an integer array for every negative number in then numbers array and
+	*  return the integer array along with the message that negatives are not allowed */
 	private static void getNeg(String [] numbers){
 		int neg[] = new int[numbers.length+1];
 		int counter = 0;
@@ -57,6 +63,8 @@ public class StringCalculator {
 		}
 	}
 
+	/* stringSplitters split the string by delimeter, if it recieves "//" then it will split
+	*  the array by a new kind of a delimeter. Then it will return fully splitted array */
 	private static String [] stringSplitter(String text){
 		text = text.replace("\n", ",");
 		String numbers[];

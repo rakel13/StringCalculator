@@ -8,7 +8,7 @@ public class StringCalculator {
 			if(text.contains(",") || text.contains("\\n") || text.contains("//")){
 				String [] numbers = stringSplitter(text);
 				
-				if(isNeg(numbers) == 0){
+				if(!isNeg(numbers)){
 					return sum(numbers);
 				}
 				else{
@@ -36,13 +36,13 @@ public class StringCalculator {
 		return sum;
 	}
 
-	private static int isNeg(String [] numbers){
+	private static boolean isNeg(String [] numbers){
 		for(String n : numbers){
 			if(toInt(n) < 0){
-				return 1;
+				return true;
 			}
 		}
-		return 0;
+		return false;
 	}
 
 	private static int [] getNeg(String [] numbers){

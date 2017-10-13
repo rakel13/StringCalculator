@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.hugb.StringCalculatorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-10-13T10:02:21" hostname="DESKTOP-HR4CJFR" time="0.005">
+<testsuite name="is.ru.hugb.StringCalculatorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-10-13T10:09:04" hostname="DESKTOP-HR4CJFR" time="0.005">
   <properties/>
   <testcase name="testMultiplesNumbers" classname="is.ru.hugb.StringCalculatorTest" time="0.001"/>
   <testcase name="testDelimeter" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
   <testcase name="testTwoNumber" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
-  <testcase name="testEmptyString" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
+  <testcase name="testEmptyString" classname="is.ru.hugb.StringCalculatorTest" time="0.001"/>
   <testcase name="testIfNegative" classname="is.ru.hugb.StringCalculatorTest" time="0.001"/>
-  <testcase name="testIfTooBig" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
+  <testcase name="testIfTooBig" classname="is.ru.hugb.StringCalculatorTest" time="0.001"/>
   <testcase name="testOneNumber" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
   <system-out><![CDATA[Negatives not allowed: 
 -1

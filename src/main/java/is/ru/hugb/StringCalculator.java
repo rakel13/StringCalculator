@@ -8,15 +8,12 @@ public class StringCalculator {
 			if(text.contains(",") || text.contains("\\n") || text.contains("//")){
 				String [] numbers = stringSplitter(text);
 				
-				if(!isNeg(numbers)){
-					return sum(numbers);
+				if(isNeg(numbers)){
+					getNeg(numbers);
+					
 				}
 				else{
-					int neg[] = getNeg(numbers);
-					System.out.println("Negatives not allowed: ");
-					for(int n : neg){
-						System.out.println(n);
-					}
+					return sum(numbers);
 				}
 			}
 			return 1;
@@ -45,7 +42,7 @@ public class StringCalculator {
 		return false;
 	}
 
-	private static int [] getNeg(String [] numbers){
+	private static void getNeg(String [] numbers){
 		int neg[] = new int[numbers.length+1];
 		int counter = 0;
 		for(String n : numbers){
@@ -54,7 +51,10 @@ public class StringCalculator {
 				counter++;
 			}
 		}
-		return neg;
+		System.out.println("Negatives not allowed: ");
+		for(int n : neg){
+			System.out.println(n);
+		}
 	}
 
 	private static String [] stringSplitter(String text){

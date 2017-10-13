@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.hugb.StringCalculatorTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-10-13T08:04:06" hostname="DESKTOP-HR4CJFR" time="0.005">
+<testsuite name="is.ru.hugb.StringCalculatorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-10-13T10:02:21" hostname="DESKTOP-HR4CJFR" time="0.005">
   <properties/>
-  <testcase name="testMultiplesNumbers" classname="is.ru.hugb.StringCalculatorTest" time="0.002"/>
+  <testcase name="testMultiplesNumbers" classname="is.ru.hugb.StringCalculatorTest" time="0.001"/>
+  <testcase name="testDelimeter" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
   <testcase name="testTwoNumber" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
   <testcase name="testEmptyString" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
   <testcase name="testIfNegative" classname="is.ru.hugb.StringCalculatorTest" time="0.001"/>

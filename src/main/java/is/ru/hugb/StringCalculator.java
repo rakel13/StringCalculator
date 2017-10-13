@@ -5,8 +5,9 @@ public class StringCalculator {
 		if(text.equals(""))
 			return 0;
 		else{
-			if(text.contains(",") || text.contains("\\n")){
-				String numbers[] = text.replace("\n", ",").split(",");
+			if(text.contains(",") || text.contains("\\n") || text.contains("//")){
+				String [] numbers = stringSplitter(text);
+				
 				if(isNeg(numbers) == 0){
 					return sum(numbers);
 				}
@@ -54,8 +55,19 @@ public class StringCalculator {
 			}
 		}
 		return neg;
-
 	}
 
+	private static String [] stringSplitter(String text){
+		text = text.replace("\n", ",");
+		String numbers[];
+		String delimeter = ",";
+		if(text.startsWith("//")){
+			int index = text.indexOf("//") + 2;
+			delimeter = text.substring(index, index + 1);
+			text = text.substring(index + 2);
+		}
+		numbers = text.split(delimeter);
+		return numbers;
+	}
 }
 

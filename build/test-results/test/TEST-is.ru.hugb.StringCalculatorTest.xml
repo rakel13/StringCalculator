@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.hugb.StringCalculatorTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-10-12T23:32:31" hostname="DESKTOP-HR4CJFR" time="0.005">
+<testsuite name="is.ru.hugb.StringCalculatorTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-10-13T08:04:06" hostname="DESKTOP-HR4CJFR" time="0.005">
   <properties/>
   <testcase name="testMultiplesNumbers" classname="is.ru.hugb.StringCalculatorTest" time="0.002"/>
   <testcase name="testTwoNumber" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
   <testcase name="testEmptyString" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
   <testcase name="testIfNegative" classname="is.ru.hugb.StringCalculatorTest" time="0.001"/>
-  <testcase name="testOneNumber" classname="is.ru.hugb.StringCalculatorTest" time="0.001"/>
+  <testcase name="testIfTooBig" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
+  <testcase name="testOneNumber" classname="is.ru.hugb.StringCalculatorTest" time="0.0"/>
   <system-out><![CDATA[Negatives not allowed: 
 -1
 0
 0
 Negatives not allowed: 
+-4
 -5
-0
 0
 0
 0

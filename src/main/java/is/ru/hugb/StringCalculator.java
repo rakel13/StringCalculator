@@ -29,9 +29,8 @@ public class StringCalculator {
 	private static int sum(String [] numbers){
 		int sum = 0;
 		for(String n : numbers){
-			
-
-			sum += toInt(n);
+			if(toInt(n) <= 1000)
+				sum += toInt(n);
 		}
 		return sum;
 	}
@@ -51,10 +50,12 @@ public class StringCalculator {
 		for(String n : numbers){
 			if(toInt(n) < 0){
 				neg[counter] = toInt(n);
+				counter++;
 			}
 		}
 		return neg;
 
 	}
+
 }
 

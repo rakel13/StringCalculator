@@ -33,4 +33,10 @@ public class StringCalculatorTest {
 
 		//assertEguals("Negatives not allowed: -1", StringCalculator.add("-1,2"));
 	}
+
+	@Test
+	public void testIfTooBig() {
+		//assertEquals(6, StringCalculator.add("1,2,3"));
+		assertEquals(2, StringCalculator.add("1001,2"));
+	}
 }
